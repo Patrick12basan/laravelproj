@@ -20,7 +20,7 @@ return new class extends Migration
 			$table->string('course');
 			$table->integer('year');
 			$table->char('section',1);
-			$table->string('email');->unique();
+			$table->string('email')->unique();
             $table->timestamps();
         });
     }
